@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:smelting",
+    "group": "raw_idium",
+    "ingredient": {
+        "item": "graysmod:idium_ore"
+    },
+    "result": "graysmod:raw_idium",
+    "experience": 5,
+    "cookingtime": 200
+}
