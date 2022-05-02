@@ -35,7 +35,8 @@ public class GraysMod
 	public GraysMod()
 	{
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-		
+
+		// This registers stuff
 		Items.ITEMS.register(bus);
 		Blocks.BLOCKS.register(bus);
 		MenuTypes.MENUS.register(bus);
