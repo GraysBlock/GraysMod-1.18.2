@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "graysmod:block/blacksmiths_table_front",
+    "north": "graysmod:block/blacksmiths_table_front",
+    "south": "graysmod:block/blacksmiths_table_front",
+    "east": "graysmod:block/blacksmiths_table_side",
+    "west": "graysmod:block/blacksmiths_table_side",
+    "up": "graysmod:block/blacksmiths_table_top",
+    "down": "graysmod:block/blacksmiths_table_bottom"
+  }
+}

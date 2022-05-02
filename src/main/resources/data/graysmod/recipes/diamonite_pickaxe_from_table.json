@@ -1,0 +1,14 @@
+{
+  "type": "graysmod:blacksmiths_table",
+  "base": {
+    "item": "minecraft:netherite_pickaxe"
+  },
+  
+  "addition": {
+    "item": "graysmod:diamonite"
+  },
+  
+  "result": {
+    "item": "graysmod:diamonite_pickaxe"
+  }
+}

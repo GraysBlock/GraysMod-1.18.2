@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="All rights reserved"
+[[mods]] 
+modId="graysmod"
+version="${file.jarVersion}" 
+displayName="GraysMod"
+logoFile="graysmod.png" 
+credits="Annoysalot, EnderYBAX, and all the people who supported me along the way!"
+authors="GraysBlock"
+description='''
+A mod that aims to implement features that stay as close to the style of Minecraft as possible.
+'''
+
+[[dependencies.graysmod]]
+    modId="forge" 
+    mandatory=true 
+    versionRange="[40,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.graysmod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"

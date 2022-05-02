@@ -1,0 +1,9 @@
+{
+	"replace": false,
+	"values": [
+		"graysmod:diamonite_ore",
+		"graysmod:deepslate_diamonite_ore",
+		"graysmod:idium_ore",
+		"graysmod:deepslate_idium_ore"
+	]
+}

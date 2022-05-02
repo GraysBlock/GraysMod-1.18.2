@@ -1,0 +1,47 @@
+{
+	// Items
+	
+	"item.graysmod.diamonite": "Diamonite",
+	"item.graysmod.raw_diamonite": "Raw Diamonite",
+	"item.graysmod.idium": "Idium",
+	"item.graysmod.raw_idium": "Raw Idium",
+	"item.graysmod.diamonite_pickaxe": "Diamonite Pickaxe",
+	"item.graysmod.idium_pickaxe": "Idium Pickaxe",
+	"item.graysmod.diamonite_axe": "Diamonite Axe",
+	"item.graysmod.idium_axe": "Idium Axe",
+	"item.graysmod.diamonite_shovel": "Diamonite Shovel",
+	"item.graysmod.idium_shovel": "Idium Shovel",
+	"item.graysmod.diamonite_hoe": "Diamonite Hoe",
+	"item.graysmod.idium_hoe": "Idium Hoe",
+	"item.graysmod.diamonite_katana": "Diamonite Katana",
+	"item.graysmod.idium_spear": "Idium Spear",
+	
+	
+	// Blocks
+	
+	"block.graysmod.diamonite_ore": "Diamonite Ore",
+	"block.graysmod.deepslate_diamonite_ore": "Deepslate Diamonite Ore",
+	"block.graysmod.idium_ore": "Idium Ore",
+	"block.graysmod.deepslate_idium_ore": "Deepslate Idium Ore",
+	"block.graysmod.blacksmiths_table": "Blacksmith's Table",
+	
+	
+	// Entities
+	
+	"entity.graysmod.idium_spear_entity": "Idium Spear",
+	
+	
+	// Containers
+	
+	"container.blacksmiths_table": "Upgrade Gear",
+	
+	
+	// Item Groups
+	
+	"itemGroup.graysmod": "GraysMod",
+	
+	
+	// Other
+	
+	"tooltip.graysmod.unfinished": "\u00A7cThis Item is NOT FINISHED\u00A7r"
+}
