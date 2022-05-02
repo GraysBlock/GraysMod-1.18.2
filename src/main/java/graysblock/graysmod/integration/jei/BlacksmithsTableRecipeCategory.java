@@ -10,9 +10,8 @@ import mezz.jei.api.helpers.IGuiHelper;
 import mezz.jei.api.recipe.IFocusGroup;
 import mezz.jei.api.recipe.RecipeIngredientRole;
 import mezz.jei.api.recipe.category.IRecipeCategory;
-import mezz.jei.config.Constants;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import org.checkerframework.checker.nullness.qual.NonNull;
@@ -27,7 +26,7 @@ public class BlacksmithsTableRecipeCategory implements IRecipeCategory<Blacksmit
 
     public BlacksmithsTableRecipeCategory(IGuiHelper helper)
     {
-        background = helper.createDrawable(Constants.RECIPE_GUI_VANILLA, 0, 168, 125, 18);
+        background = helper.createDrawable(TEXTURE, 26, 46, 125, 18);
         icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(Blocks.BLACKSMITHS_TABLE.get()));
     }
 
@@ -39,7 +38,7 @@ public class BlacksmithsTableRecipeCategory implements IRecipeCategory<Blacksmit
 
     @Override
     public Component getTitle() {
-        return new TranslatableComponent("Blacksmith's Table");
+        return new TextComponent("Blacksmith's Table");
     }
 
     @Override
