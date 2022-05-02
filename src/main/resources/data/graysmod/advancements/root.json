@@ -1,0 +1,26 @@
+{
+  "display": {
+    "title": {
+      "translate": "advancements.graysmod.root.title"
+    },
+    "description": {
+      "translate": "advancements.graysmod.root.description"
+    },
+    "icon": {
+      "item": "graysmod:diamonite"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "minecraft:textures/block/deepslate.png"
+  },
+  "criteria": {
+    "start": {
+      "trigger": "minecraft:enter_block",
+      "conditions": {
+        "block": "minecraft:air"
+      }
+    }
+  }
+}

@@ -23,6 +23,8 @@
 	"block.graysmod.deepslate_diamonite_ore": "Deepslate Diamonite Ore",
 	"block.graysmod.idium_ore": "Idium Ore",
 	"block.graysmod.deepslate_idium_ore": "Deepslate Idium Ore",
+	"block.graysmod.diamonite_block": "Block of Diamonite",
+	"block.graysmod.idium_block": "Block of Idium",
 	"block.graysmod.blacksmiths_table": "Blacksmith's Table",
 	
 	
@@ -39,7 +41,11 @@
 	// Item Groups
 	
 	"itemGroup.graysmod": "GraysMod",
-	
+
+
+	// Advancements
+	"advancements.graysmod.root.title": "GraysMod",
+	"advancements.graysmod.root.description": "Begin your new adventure",
 	
 	// Other
 	
