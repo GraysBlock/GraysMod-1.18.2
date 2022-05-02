@@ -2,6 +2,7 @@ package graysblock.graysmod.recipes;
 
 import java.util.stream.Stream;
 
+import net.minecraft.core.NonNullList;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.gson.JsonObject;
@@ -22,9 +23,9 @@ import net.minecraft.world.level.Level;
 
 public class BlacksmithsTableRecipe implements Recipe<Container>
 {
-	final Ingredient base;
-	   final Ingredient addition;
-	   final ItemStack result;
+	public final Ingredient base;
+	   public final Ingredient addition;
+	   public final ItemStack result;
 	   private final ResourceLocation id;
 
 	   public BlacksmithsTableRecipe(ResourceLocation p_44523_, Ingredient p_44524_, Ingredient p_44525_, ItemStack p_44526_) {
