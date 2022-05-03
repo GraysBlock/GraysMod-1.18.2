@@ -1,0 +1,14 @@
+{
+  "type": "graysmod:blacksmiths_table",
+  "base": {
+    "item": "minecraft:netherite_boots"
+  },
+  
+  "addition": {
+    "item": "graysmod:diamonite"
+  },
+  
+  "result": {
+    "item": "graysmod:diamonite_boots"
+  }
+}
