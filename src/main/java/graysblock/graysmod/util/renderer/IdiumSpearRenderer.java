@@ -5,8 +5,8 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Vector3f;
 
 import graysblock.graysmod.GraysMod;
-import graysblock.graysmod.entities.projectiles.IdiumSpearEntity;
 import graysblock.graysmod.util.model.IdiumSpearModel;
+import graysblock.graysmod.entities.projectiles.IdiumSpearEntity;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

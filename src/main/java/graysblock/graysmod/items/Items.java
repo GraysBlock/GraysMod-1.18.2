@@ -3,12 +3,8 @@ package graysblock.graysmod.items;
 import com.google.common.base.Supplier;
 
 import graysblock.graysmod.GraysMod;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.item.HoeItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -32,6 +28,10 @@ public class Items
 	public static final RegistryObject<Item> IDIUM_HOE = register("idium_hoe", () -> new HoeItem(Tiers.IDIUM, -5, 0.0F, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Item> DIAMONITE_KATANA = register("diamonite_katana", () -> new SwordItem(Tiers.DIAMONITE, 4, -1.6F, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Item> IDIUM_SPEAR = register("idium_spear", () -> new IdiumSpearItem((new Item.Properties().durability(3561).tab(GraysMod.GRAYSMOD_TAB))));
+	public static final RegistryObject<Item> DIAMONITE_HELMET = register("diamonite_helmet", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.HEAD, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> DIAMONITE_CHESTPLATE = register("diamonite_chestplate", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.CHEST, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> DIAMONITE_LEGGINGS = register("diamonite_leggings", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.LEGS, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> DIAMONITE_BOOTS = register("diamonite_boots", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.FEET, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item)
