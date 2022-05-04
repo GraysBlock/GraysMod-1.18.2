@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "#O#",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:red_concrete"
+        },
+        "O": {
+            "tag": "minecraft:sea_lantern"
+        }
+    },
+    "result": {
+        "item": "graysmod:red_chroma_block",
+        "count": 8
+    }
+}
