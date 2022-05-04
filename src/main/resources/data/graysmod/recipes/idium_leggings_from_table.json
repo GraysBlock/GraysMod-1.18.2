@@ -1,0 +1,14 @@
+{
+  "type": "graysmod:blacksmiths_table",
+  "base": {
+    "item": "minecraft:netherite_leggings"
+  },
+  
+  "addition": {
+    "item": "graysmod:idium"
+  },
+  
+  "result": {
+    "item": "graysmod:idium_leggings"
+  }
+}
