@@ -10,7 +10,7 @@
             "item": "minecraft:orange_concrete"
         },
         "O": {
-            "tag": "minecraft:sea_lantern"
+            "item": "minecraft:sea_lantern"
         }
     },
     "result": {
