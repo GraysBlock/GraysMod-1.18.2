@@ -7,6 +7,7 @@ import com.google.common.base.Supplier;
 import graysblock.graysmod.GraysMod;
 import graysblock.graysmod.items.Items;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
@@ -30,6 +31,7 @@ public class Blocks
 	public static final RegistryObject<Block> DIAMONITE_BLOCK = register("diamonite_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.DIAMOND).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Block> IDIUM_BLOCK = register("idium_block", () -> new Block(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.EMERALD).requiresCorrectToolForDrops().strength(50.0F, 1200.0F).sound(SoundType.NETHERITE_BLOCK)), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<BlacksmithsTableBlock> BLACKSMITHS_TABLE = register("blacksmiths_table", () -> new BlacksmithsTableBlock(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD).strength(2.5f, 2.5f).sound(SoundType.WOOD)), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> WHITE_CHROMA_BLOCK = register("white_chroma_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS, DyeColor.WHITE).strength(0.3F).sound(SoundType.GLASS).lightLevel((p_152686_) -> { return 15; })), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block)
