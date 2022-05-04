@@ -32,6 +32,10 @@ public class Items
 	public static final RegistryObject<Item> DIAMONITE_CHESTPLATE = register("diamonite_chestplate", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.CHEST, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Item> DIAMONITE_LEGGINGS = register("diamonite_leggings", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.LEGS, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Item> DIAMONITE_BOOTS = register("diamonite_boots", () -> new ArmorItem(ArmorTiers.DIAMONITE, EquipmentSlot.FEET, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> IDIUM_HELMET = register("idium_helmet", () -> new ArmorItem(ArmorTiers.IDIUM, EquipmentSlot.HEAD, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> IDIUM_CHESTPLATE = register("idium_chestplate", () -> new ArmorItem(ArmorTiers.IDIUM, EquipmentSlot.CHEST, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> IDIUM_LEGGINGS = register("idium_leggings", () -> new ArmorItem(ArmorTiers.IDIUM, EquipmentSlot.LEGS, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Item> IDIUM_BOOTS = register("idium_boots", () -> new ArmorItem(ArmorTiers.IDIUM, EquipmentSlot.FEET, new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	
 	
 	private static <T extends Item> RegistryObject<T> register(final String name, final Supplier<T> item)
