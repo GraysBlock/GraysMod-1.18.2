@@ -10,6 +10,8 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.FlowerPotBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -47,6 +49,14 @@ public class Blocks
 	public static final RegistryObject<Block> GREEN_CHROMA_BLOCK = register("green_chroma_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS, DyeColor.GREEN).strength(0.3F).sound(SoundType.GLASS).lightLevel((p_152686_) -> { return 15; })), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Block> RED_CHROMA_BLOCK = register("red_chroma_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS, DyeColor.RED).strength(0.3F).sound(SoundType.GLASS).lightLevel((p_152686_) -> { return 15; })), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
 	public static final RegistryObject<Block> BLACK_CHROMA_BLOCK = register("black_chroma_block", () -> new Block(BlockBehaviour.Properties.of(Material.GLASS, DyeColor.BLACK).strength(0.3F).sound(SoundType.GLASS).lightLevel((p_152686_) -> { return 15; })), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> YELLOW_TULIP = register("yellow_tulip", () -> new FlowerBlock(null, 0, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> YELLOW_TULIP_POTTED = registerWithoutBlockItem("potted_yellow_tulip", () -> new FlowerPotBlock(null, Blocks.YELLOW_TULIP, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()));
+	public static final RegistryObject<Block> PURPLE_TULIP = register("purple_tulip", () -> new FlowerBlock(null, 0, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> PURPLE_TULIP_POTTED = registerWithoutBlockItem("potted_purple_tulip", () -> new FlowerPotBlock(null, Blocks.PURPLE_TULIP, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()));
+	public static final RegistryObject<Block> BLACK_TULIP = register("black_tulip", () -> new FlowerBlock(null, 0, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> BLACK_TULIP_POTTED = registerWithoutBlockItem("potted_black_tulip", () -> new FlowerPotBlock(null, Blocks.BLACK_TULIP, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.RED_TULIP).noOcclusion()));
+	public static final RegistryObject<Block> CYAN_POPPY = register("cyan_poppy", () -> new FlowerBlock(null, 0, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.POPPY).noOcclusion()), object -> () -> new BlockItem(object.get(), new Item.Properties().tab(GraysMod.GRAYSMOD_TAB)));
+	public static final RegistryObject<Block> CYAN_POPPY_POTTED = registerWithoutBlockItem("potted_cyan_poppy", () -> new FlowerPotBlock(null, Blocks.CYAN_POPPY, BlockBehaviour.Properties.copy(net.minecraft.world.level.block.Blocks.POPPY).noOcclusion()));
 
 	
 	private static <T extends Block> RegistryObject<T> registerBlock(final String name, final Supplier<? extends T> block)
@@ -59,5 +69,10 @@ public class Blocks
 		RegistryObject<T> obj = registerBlock(name, block);
 		ITEMS.register(name, item.apply(obj));
 		return obj;
+	}
+
+	private static <T extends Block> RegistryObject<T> registerWithoutBlockItem(String name, Supplier<T> block)
+	{
+		return BLOCKS.register(name, block);
 	}
 }

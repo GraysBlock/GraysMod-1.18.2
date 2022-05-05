@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "graysmod:block/yellow_tulip"
+  }
+}

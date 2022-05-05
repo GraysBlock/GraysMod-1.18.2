@@ -50,6 +50,10 @@
 	"block.graysmod.green_chroma_block": "Green Chroma Block",
 	"block.graysmod.red_chroma_block": "Red Chroma Block",
 	"block.graysmod.black_chroma_block": "Black Chroma Block",
+	"block.graysmod.yellow_tulip": "Yellow Tulip",
+	"block.graysmod.purple_tulip": "Purple Tulip",
+	"block.graysmod.black_tulip": "Black Tulip",
+	"block.graysmod.cyan_poppy": "Cyan Poppy",
 	
 	
 	// Entities
