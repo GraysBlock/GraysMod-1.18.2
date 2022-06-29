@@ -1,6 +1,0 @@
-{
-	"parent": "block/cube_all",
-	"textures": {
-		"all": "graysmod:block/lime_chroma_block"
-	}
-}
