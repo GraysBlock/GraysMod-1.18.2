@@ -54,6 +54,7 @@ public class GraysMod
 	private void clientSetup(final FMLClientSetupEvent event)
 	{
 		MenuScreens.register(MenuTypes.BLACKSMITHS_TABLE_MENU.get(), BlacksmithsTableScreen::new);
+
 		ItemBlockRenderTypes.setRenderLayer(Blocks.YELLOW_TULIP.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(Blocks.YELLOW_TULIP_POTTED.get(), RenderType.cutout());
 		ItemBlockRenderTypes.setRenderLayer(Blocks.PURPLE_TULIP.get(), RenderType.cutout());
