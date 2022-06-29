@@ -49,6 +49,7 @@ public class GraysMod
 		
 		MinecraftForge.EVENT_BUS.register(this);
 		bus.addListener(this::clientSetup);
+		bus.addListener(this::setup);
 	}
 	
 	private void clientSetup(final FMLClientSetupEvent event)
