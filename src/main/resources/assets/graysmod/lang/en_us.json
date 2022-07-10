@@ -58,7 +58,14 @@
 	// Advancements
 	"advancements.graysmod.root.title": "GraysMod",
 	"advancements.graysmod.root.description": "Begin your new adventure",
-	
+
+	// Menus
+	"configGui.graysmod.mainTitle": "§lGraysMod Configuration",
+	"configGui.graysmod.mainSubtitle": "§cThis mod is STILL IN DEVELOPMENT!",
+	"configGui.graysmod.menuTitle": "§lGraysMod Configuration - Title Screen",
+	"configGui.graysmod.menuButton": "Title Screen",
+	"configGui.graysmod.titleScreenStyle": "GraysMod Title Screen",
+
 	// Other
 	
 	"tooltip.graysmod.unfinished": "\u00A7cThis Item is NOT FINISHED\u00A7r"
